@@ -10,5 +10,4 @@ var soloHora = fechaString.substring(16, 24);
 server.on("request",function(req,res){
 	res.end("la hora es: "+soloHora);
 } );
-
 server.listen(process.env.PORT || 3000);

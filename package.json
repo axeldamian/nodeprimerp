@@ -1,12 +1,25 @@
 {
   "name": "axelserver",
   "version": "1.0.0",
-  "description": "",
-  "main": "serverOn.js",
+  "description": "primer proyecto de node",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.11.0",
+    "time": "^0.11.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axeldamian/nodeprimerp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/axeldamian/nodeprimerp/issues"
+  },
+  "homepage": "https://github.com/axeldamian/nodeprimerp#readme"
 }

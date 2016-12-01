@@ -1,13 +1,31 @@
-var fs = require('fs');
+/*Leer y devolver un fichero*/
 
-if (fs.existsSync(process.argv[2])) {
-    // Do something
-}
+var http = require("http");
+var url = require("url");
+var fs = require("fs");
+var server = http.createServer();
 
-// Or
-
-fs.exists( process.argv[2] , function(exists) {
-    if (exists) {
-        // Do something
-    }
+server.on("request", function(req,res){
+	var urlData = url.parse(req.url);
+	var path = urlData.pathname;
+	var filePath = "public" + path ;
+	fs.exists( filePath, function(exists){
+		if (exists){
+			fs.readFile("public"+path, function (err,data){
+				if(err){
+					res.writeHead(500);
+					res.end("ha ocurrido algo malo");
+				}
+				else{
+					res.end(data);
+				}
+		})
+		}
+	else{
+		res.writeHead(404);
+		res.end("no existe!");
+	}
 });
+});
+
+server.listen(process.env.PORT || 3005);
