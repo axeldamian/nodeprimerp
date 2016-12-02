@@ -1,5 +1,0 @@
-perro
-gato
-pajaro, rana
-rata, canario
-suricata
