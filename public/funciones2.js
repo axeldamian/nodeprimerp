@@ -27,7 +27,7 @@ document.getElementById('content').innerHTML += mda.render();
     
     pager.paragraphsPerPage = 2; // elementos por pagina
     pager.pagingContainer = $('#content'); // set of main container
-    pager.paragraphs = $('div.z', pager.pagingContainer); // set of required containers
+    pager.paragraphs = $('div.articulo', pager.pagingContainer); // set of required containers
     pager.showPage(1);
 
 }
@@ -52,7 +52,7 @@ manejadorDeArticulos.prototype.load = function(articulo1,articulo2,articulo3){
 
 /* mostrar 3 articulos */
 manejadorDeArticulos.prototype.render = function(){
-	return '<div class="z">'+this.articulo1.render()+'</div>'+'<div class="z">'+this.articulo2.render()+'</div>'+'<div class="z">'+this.articulo3.render()+'</div>';
+	return '<div class="articulo">'+this.articulo1.render()+'</div>'+'<div class="articulo">'+this.articulo2.render()+'</div>'+'<div class="articulo">'+this.articulo3.render()+'</div>';
 }
 
 /* clase articulos */
