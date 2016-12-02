@@ -1,0 +1,51 @@
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+.example {
+    background: #FFF;
+    width: 1000px;
+    font-size: 80%;
+    border: 1px #000 solid;
+    padding: 1em 2em 2em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+}
+
+#content p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+#pagingControls ul {
+    /*display: inline;*/
+    padding-left: 0.5em;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#pagingControls li {
+    display: inline;
+    padding: 0 0.5em
+}
+
+#pagingControls ul li a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd; 
+}
+
+#pagingControls ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#pagingControls ul li a:hover:not(.active) {background-color: #ddd;}
+
+
+
+
