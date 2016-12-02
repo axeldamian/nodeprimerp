@@ -9,14 +9,14 @@ window.onload = function() {
  	}
 
  	if ( getUrlVars()["id"]== '3' ){
- 	document.getElementById('infoarticulo').innerHTML ='<p>hola 3</p>';
+ 	document.getElementById('infoarticulo').innerHTML ='<p>Bonadio es juez Federal desde hace más de 22 años. Nacido en Barrio Norte, en la maternidad del Hospital Rivadavia, desde los seis años vivió en San Martín, provincia de Buenos Aires. Ahora, tiene en sus manos la causa del "dólar futuro", por la que la ex presidenta Cristina Kirchner puede ir a juicio oral. En el estudio de Clarín Web TV, el juez defendió el rol institucional de los magistrados y esquivó con tacto las preguntas sobre la amenaza de mandar a buscar por la fuerza a Cristina para llevarla a Tribunales. - Usted pasó de ser funcionario de Carlos Menem, en la órbita de Carlos Corach, en esa época Secretario General de la Presidencia, a juez Federal. ¿Fue en ese momento cuando la política empezó a contaminar a la Justicia de manera definitiva?- No, creo que no. P</p>';
  	}
 
 }
 
 function ingresarArticulos( ){
 var a1 = new Articulo( "Venezuela tilda de 'golpe de Estado' su suspensión del Mercosur" , "Argentina, Brasil, Uruguay y Paraguay le cesaron sus derechos como miembro pleno del bloque.",1,true );
-var a2 = new Articulo( "alal" , "ololololslaoaou",2,false );
+var a2 = new Articulo( "Bonadio: somos responsables de la gobernabilidad de la Nación" , "El juez federal que puede llevar a Cristina Kirchner a juicio oral por causas de corrupción dice que sólo se guía por las pruebas. En el programa de Julio Blanck por Clarín.com, Bonadio dijo que no hubo cuestiones personales en la advertencia de llevar a Cristina por la fuerza a Tribunales",2,false );
 var a3 = new Articulo( "Lapidaria carta al jefe de la OEA: Milagro Sala no fue abanderada de desposeídos, fueron sus rehenes" , "Sospechas de corrupción Alejandra Martínez le dirigió una misiva al secretario General de la Organización de Estados Americanos, Luis Almagro." ,3,true);
 var b1 = new Articulo( "noticia4" , "arrondo, edad 24",4,true );
 var b2 = new Articulo( "notivcia 5" , "sdkdsadas bla bl a bla",5,false );
