@@ -15,15 +15,18 @@ window.onload = function() {
 }
 
 function ingresarArticulos( ){
-var a1 = new Articulo( "axel" , "arrondo, edad 24",1,true );
-var a2 = new Articulo( "alal" , "el perro come dogui",2,false );
+var a1 = new Articulo( "noticia 1" , "arrondo, edad 24",1,true );
+var a2 = new Articulo( "alal" , "ololololslaoaou",2,false );
 var a3 = new Articulo( "nube" , "desnublado" ,3,true);
+var b1 = new Articulo( "noticia4" , "arrondo, edad 24",1,true );
+var b2 = new Articulo( "notivcia 5" , "sdkdsadas bla bl a bla",2,false );
+var b3 = new Articulo( "notcia 6" , "desnublado" ,3,true);
 var mda = new manejadorDeArticulos();
+var mda2 = new manejadorDeArticulos();
 mda.load( a1 , a2 , a3 );
+mda2.load( b1, b2 , b3 );
 document.getElementById('content').innerHTML = mda.render();
-document.getElementById('content').innerHTML += mda.render();
-document.getElementById('content').innerHTML += mda.render();
-document.getElementById('content').innerHTML += mda.render();
+document.getElementById('content').innerHTML += mda2.render();
     
     pager.paragraphsPerPage = 2; // elementos por pagina
     pager.pagingContainer = $('#content'); // set of main container
