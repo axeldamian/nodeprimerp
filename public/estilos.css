@@ -114,6 +114,10 @@ tr:nth-child(odd) { background: #fff}
     background-color: #ddf;
 }
 
+article{
+   background-color: #ddf; 
+}
+
 #infoarticulo{
     background-color: #D8D8D8;
     width: 100%;
