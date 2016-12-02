@@ -52,7 +52,7 @@ manejadorDeArticulos.prototype.load = function(articulo1,articulo2,articulo3){
 
 /* mostrar 3 articulos */
 manejadorDeArticulos.prototype.render = function(){
-	return '<div class="articulo">'+this.articulo1.render()+'</div>'+'<div class="articulo">'+this.articulo2.render()+'</div>'+'<div class="articulo">'+this.articulo3.render()+'</div>';
+	return '<div class="articulo2">'+this.articulo1.render()+'</div>'+'<div class="articulo">'+this.articulo2.render()+'</div>'+'<div class="articulo">'+this.articulo3.render()+'</div>';
 }
 
 /* clase articulos */
