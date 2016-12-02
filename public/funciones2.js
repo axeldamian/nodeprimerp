@@ -28,6 +28,16 @@ mda2.load( b1, b2 , b3 );
 document.getElementById('content').innerHTML = mda.render();
 document.getElementById('content').innerHTML += mda2.render();
 
+
+//<script type="text/javascript">
+    var pager = new Imtech.Pager();
+    pager.paragraphsPerPage = 2; // elementos por pagina
+    pager.pagingContainer = $('#content'); // set of main container
+    pager.paragraphs = $('div.articulo', pager.pagingContainer); // set of required containers
+    pager.showPage(1);
+//</script>
+
+
 }
 
 function cancelarDefault( event,id ){
@@ -50,7 +60,7 @@ manejadorDeArticulos.prototype.load = function(articulo1,articulo2,articulo3){
 
 /* mostrar 3 articulos */
 manejadorDeArticulos.prototype.render = function(){
-	return '<div class="articulo2">'+this.articulo1.render()+'</div>'+'<div class="articulo">'+this.articulo2.render()+'</div>'+'<div class="articulo">'+this.articulo3.render()+'</div>';
+	return '<div class="articulo">'+this.articulo1.render()+'</div>'+'<div class="articulo">'+this.articulo2.render()+'</div>'+'<div class="articulo">'+this.articulo3.render()+'</div>';
 }
 
 /* clase articulos */
