@@ -1,6 +1,5 @@
 window.onload = function() {
   ingresarArticulos( );
-
   if ( getUrlVars()["id"]== '1' ){
  	document.getElementById('infoarticulo').innerHTML ='<p>hola 1</p>';
  	}
@@ -21,7 +20,16 @@ var a2 = new Articulo( "alal" , "el perro come dogui",2,false );
 var a3 = new Articulo( "nube" , "desnublado" ,3,true);
 var mda = new manejadorDeArticulos();
 mda.load( a1 , a2 , a3 );
-document.getElementById('articuloslistado').innerHTML = mda.render();
+document.getElementById('content').innerHTML = mda.render();
+document.getElementById('content').innerHTML += mda.render();
+document.getElementById('content').innerHTML += mda.render();
+document.getElementById('content').innerHTML += mda.render();
+    
+    pager.paragraphsPerPage = 2; // elementos por pagina
+    pager.pagingContainer = $('#content'); // set of main container
+    pager.paragraphs = $('div.z', pager.pagingContainer); // set of required containers
+    pager.showPage(1);
+
 }
 
 function cancelarDefault( event,id ){
@@ -44,7 +52,7 @@ manejadorDeArticulos.prototype.load = function(articulo1,articulo2,articulo3){
 
 /* mostrar 3 articulos */
 manejadorDeArticulos.prototype.render = function(){
-	return '<div class="articulo">'+this.articulo1.render()+'</div>'+'<div class="articulo">'+this.articulo2.render()+'</div>'+'<div class="articulo">'+this.articulo3.render()+'</div>';
+	return '<div class="z">'+this.articulo1.render()+'</div>'+'<div class="z">'+this.articulo2.render()+'</div>'+'<div class="z">'+this.articulo3.render()+'</div>';
 }
 
 /* clase articulos */
@@ -85,5 +93,8 @@ function getParameterByName(name) {
 var first = getUrlVars()["id"];
 var second = getUrlVars()["page"];
 */
+
+
+
 
 

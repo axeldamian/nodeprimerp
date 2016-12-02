@@ -3,18 +3,16 @@
 <HEAD>
 <title>Diario </title>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
 <script src="funciones2.js"></script>
-<script   src="https://code.jquery.com/jquery-3.1.1.slim.js"   integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA="   crossorigin="anonymous"></script>
-<link rel="stylesheet" href="estilosPaginador.css" type="text/css" />
- <!-- <script src="jquery.min.js"></script> -->
-<script src="imtech_pager.js"></script>
+<!--<script   src="https://code.jquery.com/jquery-3.1.1.slim.js"   integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA="   crossorigin="anonymous"></script>-->
 <link rel="stylesheet" href="estilos.css">
 </HEAD>
 <BODY>
 <div id="contenedor">
 <div id="menuppal">
 <ul id="ulmenu">
-  <li class="linkppal">  <a class="enlaceppal" href="diario.html">Pagina Inicio</a> </li>
+  <li class="linkppal">  <a class="enlaceppal" href="index.html">Pagina Inicio</a> </li>
   <li class="linkppal">  <a class="enlaceppal" href="http://www.w3schools.com/html/">link2</a> </li>
   <li class="linkppal">  <a class="enlaceppal" href="http://www.w3schools.com/html/">link3</a> </li>
   <li class="linkppal">  <a class="enlaceppal" href="http://www.w3schools.com/html/">link4</a> </li>
@@ -34,21 +32,27 @@ Todo Noticias
 El ex gobernador fue grabado en un boliche con la modelo, en medio de la investigación y los allanamientos por los presuntos vuelos pagados con fondos públicos de la Provincia. Mirás las imágenes.</p>
 </div>
 
-<div id="articuloslistado"></div>
-<div id="infoarticulo"    ></div>
-<!-- fin otras noticias div -->
+
+<link rel="stylesheet" href="estilosPaginador.css" type="text/css" />
+  <script src="jquery.min.js"></script> 
+<script src="imtech_pager.js"></script>
+
+
+
+<div id="content">
 </div>
+<div id="pagingControls"></div>
+<div id="infoarticulo"></div>
+</div><!--end contenedor -->
 
 
 <script type="text/javascript">
 var pager = new Imtech.Pager();
-$(document).ready(function() {
-    pager.paragraphsPerPage = 3; // elementos por pagina
-    pager.pagingContainer = $('#articuloslistado'); // set of main container
-    pager.paragraphs = $('div.articulo', pager.pagingContainer); // set of required containers
-    pager.showPage(1);
-});
+/*$(document).ready(function() {
+    
+});*/
 </script>
+
 
 </BODY>
 </HTML>
