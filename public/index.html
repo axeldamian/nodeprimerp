@@ -42,9 +42,10 @@ El ex gobernador fue grabado en un boliche con la modelo, en medio de la investi
 </div><!--end contenedor -->
 <script type="text/javascript">
 var pager = new Imtech.Pager();
-/*$(document).ready(function() {
-    
-});*/
+    pager.paragraphsPerPage = 2; // elementos por pagina
+    pager.pagingContainer = $('#content'); // set of main container
+    pager.paragraphs = $('div.articulo', pager.pagingContainer); // set of required containers
+    pager.showPage(1);
 </script>
 
 
